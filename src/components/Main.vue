@@ -5,8 +5,8 @@
         Start
       </div>
       <div class="user">
-        user avatar
-        <img src="https://source.unsplash.com/300x300/random/" />
+        Mark Evans
+        <img src="@/assets/avatar.jpg" />
       </div>
     </div>
     <div class="grid-container">
@@ -21,7 +21,10 @@
             gridRow: `span ${tile.height}`,
             backgroundImage: `url('${tile.image}')`,
             left: `${tile.sidebar === true && 'calc(90vw / 30)'}`,
-            order: `${tile.index}`
+            order: `${tile.index}`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
             }">
           <div class="icon">
           <i class="material-icons" :style="{fontSize: `${tile.height *24}px`}" >
@@ -48,7 +51,7 @@ export default {
           height: 4,
           width: 4,
           bgColor: 'lightgreen',
-          image: 'https://source.unsplash.com/random/',
+          image: require('@/assets/cover.jpg'),
           icon: 'none'
         },
         {
@@ -81,7 +84,7 @@ export default {
           height: 1,
           bgColor: 'picture',
           image: '',
-          icon: 'add_a_photo'
+          icon: 'photo_camera'
         },
         {
           title: '',
@@ -89,7 +92,7 @@ export default {
           height: 1,
           bgColor: 'music',
           image: '',
-          icon: 'phone'
+          icon: 'play_circle_filled'
         },
         {
           title: 'News',
@@ -97,7 +100,7 @@ export default {
           height: 2,
           bgColor: 'news',
           image: '',
-          icon: 'phone',
+          icon: 'live_tv',
           sidebar: true
         },
         {

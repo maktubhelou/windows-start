@@ -1,26 +1,26 @@
 :root {
     --bgcolor: #180551;
-    --skydrive: #145ABC;
-    --weather: #145ABC;
-    --internetexplorer: #145ABC;
-    --health-and-fitness: #6041B8;
-    --calendar: #6041B8;
-    --sports: #6041B8;
-    --maps: #6141B9;
-    --camera: #6141B9;
-    --photos: #189DAE;
-    --mail: #189DAE;
-    --food-and-drink: #189DAE;
-    --travel: #189DAE;
-    --games: #159A18;
-    --finance: #159A18;
-    --store: #159A18;
-    --music: #D75233;
-    --help-and-tips: #D75233;
-    --people: #D75233;
-    --news: #BB224B;
-    --picture: #BB224B;
-    --reading-list: #BB224B;
+    --skydrive: rgb(4, 100, 235);
+    --weather: rgb(13, 104, 231);
+    --internetexplorer: rgb(10, 102, 231);
+    --health-and-fitness: rgb(114, 67, 245);
+    --calendar: rgb(107, 62, 231);
+    --sports: rgb(102, 54, 235);
+    --maps: rgb(101, 55, 228);
+    --camera: rgb(102, 53, 235);
+    --photos: rgb(0, 225, 255);
+    --mail: rgb(0, 225, 255);
+    --food-and-drink: rgb(0, 225, 255);
+    --travel: rgb(0, 225, 255);
+    --games: rgb(0, 255, 4);
+    --finance: rgb(26, 199, 29);
+    --store: rgb(24, 224, 28);
+    --music: rgb(250, 71, 0);
+    --help-and-tips: rgb(255, 90, 55);
+    --people: rgb(255, 0, 68);
+    --news: rgb(255, 0, 68);
+    --picture: rgb(255, 0, 68);
+    --reading-list: rgb(255, 0, 68);
 }
 
 body {
@@ -92,9 +92,6 @@ body {
     padding: 8px;
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.3),
         0px 0px 4px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     .icon {
       position: absolute;
       top: 50%;
