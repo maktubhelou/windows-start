@@ -65,7 +65,7 @@ body {
     position: absolute;
     width: 80%;
     height: 90%;
-    margin-top: min(60px);
+    margin-top: min(96px);
     left: 50%;
     top: 50%;
     overflow-x: scroll;
@@ -79,8 +79,8 @@ body {
         top: 50%;
         display: grid;
         grid-template: 
-            repeat(8, minmax(64px, calc(100vh/14))) / 
-            repeat(16, minmax(32px, calc(100vh/14)));
+            repeat(8, minmax(48px, calc(100vh/14))) / 
+            repeat(16, minmax(48px, calc(100vh/14)));
         grid-gap: 8px;
         transform: translate(-50%, -50%);
     }
