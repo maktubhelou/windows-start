@@ -1,0 +1,111 @@
+:root {
+    --bgcolor: #180551;
+    --skydrive: #145ABC;
+    --weather: #145ABC;
+    --internetexplorer: #145ABC;
+    --health-and-fitness: #6041B8;
+    --calendar: #6041B8;
+    --sports: #6041B8;
+    --maps: #6141B9;
+    --camera: #6141B9;
+    --photos: #189DAE;
+    --mail: #189DAE;
+    --food-and-drink: #189DAE;
+    --travel: #189DAE;
+    --games: #159A18;
+    --finance: #159A18;
+    --store: #159A18;
+    --music: #D75233;
+    --help-and-tips: #D75233;
+    --people: #D75233;
+    --news: #BB224B;
+    --picture: #BB224B;
+    --reading-list: #BB224B;
+}
+
+body {
+    background-color: var(--bgcolor);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+.header {
+    position: relative;
+    height: 60px;
+    color: #fff;
+    padding: 2vw 8vw 0 8vw;
+    .start, .user {
+        display: inline-block;
+        position: relative;
+        height: 100px;
+    }
+    .start {
+        font-size: 32px;
+    }
+    .user {
+        display: flex;
+        align-items: flex-start;
+        float: right;
+        font-size: 24px;
+        img {
+            margin-left: 32px;
+            margin-top: -16px;
+            width: 64px;
+            height: 64px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 64px;
+            object-fit: center;
+        }
+    }
+}
+.grid-container {
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 60%;
+    overflow-x: scroll;
+    transform: translate(-50%, -50%);
+    .grid {
+        width: 100%;
+        height: 100%;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: grid;
+        grid-template: 
+            repeat(8, minmax(calc(100vh/24), calc(100vh/14))) / 
+            repeat(16, minmax(calc(100vh/24), calc(100vh/14)));
+        grid-gap: 8px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.tile {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: 8px;
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.3),
+        0px 0px 4px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .title {
+      font-size: 10px;
+      align-self: flex-end;
+    }
+    &:hover {
+      box-shadow: inset 0px 0px 200px rgba(255, 255, 255, 0.8);
+    }
+  }
